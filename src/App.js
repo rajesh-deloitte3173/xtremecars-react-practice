@@ -1,11 +1,11 @@
 import './App.css';
 import{BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from './components/home';
-import ViewAllCars from './components/viewAllCars';
-import CarSpecifications from './components/carSpecifications';
-import BookingPage from './components/bookingPage';
-import BookingSuccessful from './components/bookingSuccessful';
-import NotFoundPage from './components/notFound';
+import Home from './routingComponents/home';
+import ViewAllCars from './routingComponents/viewAllCars';
+import CarSpecifications from './routingComponents/carSpecifications';
+import BookingPage from './routingComponents/bookingPage';
+import BookingSuccessful from './routingComponents/bookingSuccessful';
+import NotFoundPage from './routingComponents/notFound';
 
 function App() {
   return (

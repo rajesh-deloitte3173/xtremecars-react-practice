@@ -1,0 +1,43 @@
+.header{
+    height: 72px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 100px;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand > p{
+    font-size: 24px;
+}
+
+.brand > p > span{
+    font-weight: 800;
+}
+
+.nav-middle{
+    display: flex;
+}
+
+.nav-middle-link{
+    font-size: 20px;
+    margin: 0px 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-middle-link:hover, .profile-link:hover{
+    color: #80bfff;
+}
+
+.profile-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+

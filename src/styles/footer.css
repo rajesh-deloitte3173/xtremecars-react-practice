@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 120px 100px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.contact, .address, .legal, .social{
+    flex: 1;
+    font-size: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-headings{
+    font-weight: 700;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links:hover{
+    color: #80bfff;
+}
+
+.address{
+    padding-right: 100px;
+}
+
+.full-address{
+    margin: 0%;
+}
+
+.legal-cont{
+    margin: 0%;
+}
+
+.social > div{
+    line-height: 40px;
+}
