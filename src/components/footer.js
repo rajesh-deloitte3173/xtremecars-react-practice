@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <div className="address">
                 <p className='footer-headings'>Xtremecars:</p> <br />
-                <p className='full-address'>12th Floor, Vishwaroop IT Park, Sector 32, Vashi, Navi Mumbai - 400705. Maharashtra, India</p> 
+                <p className='full-address'>12th Floor, Vishwaroop IT Park, Sector 32, Vashi, Navi Mumbai - 400705. Maharashtra, India</p> <br /> 
                 <p>Phone: +91 (22) 612 800000</p>
             </div>
             <div className="legal">
@@ -27,7 +27,7 @@ const Footer = () => {
                 <p className='legal-cont'>Cookie Policy</p>
             </div>
             <div className="social">
-                <p className='footer-headings'>Connect with us</p>
+                <p className='footer-headings'>Connect with us</p> <br />
                 <div><Link to="#"><img src={facebook} /></Link></div>
                 <div><Link to="#"><img src={twitter} /></Link></div>
                 <div><Link to="#"><img src={insta} /></Link></div> 
