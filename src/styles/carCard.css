@@ -1,0 +1,21 @@
+.car-card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: black;
+    /* width: fit-content; */
+}
+
+.car-card-disc{
+    padding: 10px;
+}
+
+.car-brand-name{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.car-price{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}

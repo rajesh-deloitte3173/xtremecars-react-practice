@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import '../styles/home.css';
@@ -6,6 +6,17 @@ import sedenback from '../photos/sedanBack.png';
 import svuback from '../photos/svuBack.png';
 import hatchback from '../photos/hatchBack.png';
 import coupeback from '../photos/coupeBack.png';
+import img1 from '../photos/img1.svg';
+import img2 from '../photos/img2.svg';
+import img3 from '../photos/img3.svg';
+import img4 from '../photos/img4.svg';
+import img5 from '../photos/img5.svg';
+import img6 from '../photos/img6.svg';
+import img7 from '../photos/img7.svg';
+import img8 from '../photos/img8.svg';
+import { Link } from "react-router-dom";
+import CarCard from "../components/carCard";
+import useFetch from "../components/useFetch";
 
 const Home = () =>{
 
@@ -14,8 +25,14 @@ const Home = () =>{
     const [selectHatch, setSelectHatch] =useState("select-car-name");
     const [selectCoupe, setSelectCoupe] =useState("select-car-name");
     const [backgroundImg, setbackgroundImg] = useState(sedenback);
+    
+    const {data:allCars, loading, error} = useFetch('http://localhost:8080/cars');
+
+
 
     const clickOnCar = (carName) =>{
+        console.log( typeof allCars[2].picture);
+        console.log(allCars[2].picture);
         switch(carName){
             case "sedan":{
                 setSelectSedan("selected-car-name");
@@ -40,7 +57,7 @@ const Home = () =>{
                 setSelectCoupe("select-car-name");
                 setbackgroundImg(hatchback);
                 break;
-            }
+            } 
             case "coupe":{
                 setSelectSedan("select-car-name");
                 setSelectSuv("select-car-name");
@@ -80,7 +97,27 @@ const Home = () =>{
                 </div>
             </div>
             <div className="featured-cars">
-                featured cars
+                <div className="fatured-cars-heading">
+                    <p>Featured <span>Cars</span></p>
+                </div>
+                <div className="featured-cars-selectionbar">
+                    <div className="featured-cars-selectitems">
+                        <p className="featured-cars-selectitem featured-cars-selecteditem">Popular</p>
+                        <p className="featured-cars-selectitem">Just launched</p>
+                        <p className="featured-cars-selectitem">Upcoming</p>
+                    </div>
+                    <div className="featured-cars-viewall">
+                        <Link to="/cars" className="viewall-button">View all</Link>
+                    </div>
+                </div>
+                
+                <div className="featured-cars-body">
+                    {allCars && <CarCard car={allCars[0]} photo={img1}/>}
+                    {allCars && <CarCard car={allCars[1]} photo={img2}/>}
+                    {allCars && <CarCard car={allCars[2]} photo={img3}/>}
+                    {allCars && <CarCard car={allCars[3]} photo={img4}/>}
+                    {allCars && <CarCard car={allCars[4]} photo={img5}/>}
+                </div>
             </div>
             <div className="home-footer">
                 <Footer />

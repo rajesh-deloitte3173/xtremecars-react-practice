@@ -5,10 +5,10 @@ const Header = () => {
 
     return (
         <div className="header">
-            <div className="brand">
+            <Link to="/"  className="brand">
                 <img src={Logo} />
                 <p>XTREME<span>CARS</span></p>
-            </div>
+            </Link>
             <div className="nav-middle">
                 <Link to="#" className='nav-middle-link'><p>NEW CARS</p></Link>
                 <Link to="#" className='nav-middle-link'><p>USED CARS</p></Link>

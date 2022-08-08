@@ -43,7 +43,6 @@
 }
 
 .selected-car{
-    /* width: 100%; */
     height: 700px;
     background-color: black;
 }
@@ -76,4 +75,72 @@
     border: none;
     font-size: 18px;
     font-weight: 500;
+}
+
+.featured-cars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.fatured-cars-heading, .featured-cars-selectionbar, .featured-cars-body{
+    width: 90%;
+    background-color: white;   
+    padding: 0px 30px; 
+}
+
+.fatured-cars-heading{
+    font-size: 28px;
+    padding: 60px 30px 40px 30px;
+}
+
+.fatured-cars-heading > p {
+    font-weight: 400;
+}
+
+.fatured-cars-heading > p > span{
+    font-weight: 800;
+}
+
+.featured-cars-selectionbar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.featured-cars-selectitems{
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.featured-cars-selectitem{
+    padding: 12px 30px;
+    color: rgba(0, 0, 0, 0.5);;
+}
+
+.featured-cars-selecteditem{
+    background-color: black;
+    color: white;   
+}
+
+.featured-cars-viewall{
+    display: flex;
+    align-items: center;
+}
+
+.viewall-button{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.featured-cars-body{
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
 }
