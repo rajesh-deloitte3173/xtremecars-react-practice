@@ -6,3 +6,13 @@
 p{
     margin: 0%;
 }
+
+.loading-class{
+    font-size: 20px;
+    color: yellow;
+}
+
+.error-class{
+    font-size: 20px;
+    color: red;
+}

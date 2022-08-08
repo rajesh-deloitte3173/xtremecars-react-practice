@@ -28,8 +28,6 @@ const Home = () =>{
     
     const {data:allCars, loading, error} = useFetch('http://localhost:8080/cars');
 
-
-
     const clickOnCar = (carName) =>{
         console.log( typeof allCars[2].picture);
         console.log(allCars[2].picture);
@@ -112,6 +110,8 @@ const Home = () =>{
                 </div>
                 
                 <div className="featured-cars-body">
+                    {loading && <p className="loading-class">loading....</p>}
+                    {error && <p className="error-class">Error occured:- {error}</p>}
                     {allCars && <CarCard car={allCars[0]} photo={img1}/>}
                     {allCars && <CarCard car={allCars[1]} photo={img2}/>}
                     {allCars && <CarCard car={allCars[2]} photo={img3}/>}
