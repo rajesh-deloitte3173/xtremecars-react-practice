@@ -11,9 +11,6 @@ import img2 from '../photos/img2.svg';
 import img3 from '../photos/img3.svg';
 import img4 from '../photos/img4.svg';
 import img5 from '../photos/img5.svg';
-import img6 from '../photos/img6.svg';
-import img7 from '../photos/img7.svg';
-import img8 from '../photos/img8.svg';
 import { Link } from "react-router-dom";
 import CarCard from "../components/carCard";
 import useFetch from "../components/useFetch";
@@ -29,8 +26,6 @@ const Home = () =>{
     const {data:allCars, loading, error} = useFetch('http://localhost:8080/cars');
 
     const clickOnCar = (carName) =>{
-        console.log( typeof allCars[2].picture);
-        console.log(allCars[2].picture);
         switch(carName){
             case "sedan":{
                 setSelectSedan("selected-car-name");

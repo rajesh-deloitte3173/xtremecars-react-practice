@@ -1,0 +1,69 @@
+.viewallCars-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.vcars-selectionbar-back, .vcars-result, .vcars-displaySelected{
+    width: 90%;
+    padding: 0px 30px;
+    background-color: white; 
+}
+
+.vcars-selectionbar-back{
+    padding-top: 30px;
+}
+
+.vcars-selectionbar{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: fit-content;
+    background-color: #F5F5F5;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.vcars-selecteditem, .vcars-selectitem{
+    width: 120px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.vcars-selecteditem{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.vcars-selectitem{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.vcars-selectitem:hover{
+    color: #80bfff;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.vcars-result{
+    font-size: 16px;
+}
+
+.vcars-result > p{
+    padding-top: 20px;
+}
+
+.vcars-displaySelected{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 70px;
+}
