@@ -50,7 +50,7 @@ const ViewAllCars = () =>{
                 setSuvButton("vcars-selectitem");
                 setHatchButton("vcars-selectitem");
                 setCoupeButton("vcars-selectitem");
-                const someCars = allCars.filter((car)=>car.type=='Sedan');
+                const someCars = allCars.filter((car)=>car.type==='Sedan');
                 setdisplayCars(someCars);
 
                 break;
@@ -61,7 +61,7 @@ const ViewAllCars = () =>{
                 setSuvButton("vcars-selecteditem");
                 setHatchButton("vcars-selectitem");
                 setCoupeButton("vcars-selectitem");
-                const someCars = allCars.filter((car)=>car.type=='SUV');
+                const someCars = allCars.filter((car)=>car.type==='SUV');
                 setdisplayCars(someCars);
 
                 break;
@@ -72,7 +72,7 @@ const ViewAllCars = () =>{
                 setSuvButton("vcars-selectitem");
                 setHatchButton("vcars-selecteditem");
                 setCoupeButton("vcars-selectitem");
-                const someCars = allCars.filter((car)=>car.type=='Hatchback');
+                const someCars = allCars.filter((car)=>car.type==='Hatchback');
                 setdisplayCars(someCars);
 
                 break
@@ -83,7 +83,7 @@ const ViewAllCars = () =>{
                 setSuvButton("vcars-selectitem");
                 setHatchButton("vcars-selectitem");
                 setCoupeButton("vcars-selecteditem");
-                const someCars = allCars.filter((car)=>car.type=='Coupe');
+                const someCars = allCars.filter((car)=>car.type==='Coupe');
                 setdisplayCars(someCars);
 
                 break;

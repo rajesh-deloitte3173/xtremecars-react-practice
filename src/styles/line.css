@@ -1,0 +1,17 @@
+.active-line, .deactive-line{
+    height: 130px;
+}
+
+.active-line{
+    border-left: 4px solid black;
+}
+
+.deactive-line{
+    border-left: 4px solid #F5F5F5;
+}
+
+.active-line > p{
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 500;
+}
