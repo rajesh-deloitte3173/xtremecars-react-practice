@@ -17,10 +17,10 @@ function App() {
         <Route exact path='/cars'>
           <ViewAllCars />
         </Route>
-        <Route exact path='/car/id'>
+        <Route exact path='/car/:id'>
           <CarSpecifications />
         </Route>
-        <Route exact path='/car/id/book'>
+        <Route exact path='/car/:id/book'>
           <BookingPage />
         </Route>
         <Route exact path='/car/id/success'>

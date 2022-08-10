@@ -16,8 +16,9 @@
     'brand brand sepcifhead'
     'lin1 pic1 con1'
     'lin2 pic2 con2'
-    'lin3 pic3 con3';
-    grid-template-columns: 1fr 3fr 1fr; 
+    'lin3 pic3 con3'
+    'bu bu but';
+    grid-template-columns: 1fr 4fr 2fr; 
 }
 
 .specification-brand{
@@ -39,6 +40,8 @@
 
 .specification-line-1{
     grid-area: lin1;
+    display: flex;
+    align-items: center;
 }
 
 .specification-img-1{
@@ -47,10 +50,14 @@
 
 .specification-cont-1{
     grid-area: con1;
+    width: 270px;
+    padding-bottom: 100px;
 }
 
 .specification-line-2{
     grid-area: lin2;
+    display: flex;
+    align-items: center;
 }
 
 .specification-img-2{
@@ -59,16 +66,81 @@
 
 .specification-cont-2{
     grid-area: con2;
+    width: 270px;
+    padding-bottom: 100px;
 }
 
 .specification-line-3{
     grid-area: lin3;
+    display: flex;
+    align-items: center;
 }
 
 .specification-img-3{
     grid-area: pic3;
 }
 
+.specification-img-3 > img{
+    margin-bottom: 30px;
+}
+
 .specification-cont-3{
     grid-area: con3;
+    width: 270px;
+}
+
+.specification-book{
+    grid-area: but;
+    padding-left: 50px;
+}
+
+.specification-label{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.specification-value{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.specification-sidehead{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+.specification-color{
+    width: 180px;
+    height: 100px;
+}
+
+.specification-cost{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.specification-cost > p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.specification-book > div{
+    width: 160px;
+    height: 45px;
+    background-color: #790E22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
 }
