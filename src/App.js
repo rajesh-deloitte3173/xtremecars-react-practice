@@ -23,7 +23,7 @@ function App() {
         <Route exact path='/car/:id/book'>
           <BookingPage />
         </Route>
-        <Route exact path='/car/id/success'>
+        <Route exact path='/car/:id/success'>
           <BookingSuccessful />
         </Route>
         <Route path='/*'>

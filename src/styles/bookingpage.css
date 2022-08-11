@@ -1,0 +1,121 @@
+.booking-container{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-body{
+    width: 85%;
+    padding: 50px 50px;
+    background-color: white;
+    display: flex;
+}
+
+.booking-details{
+    flex: 1;
+    margin-right: 20px;
+    background-color: #F5F5F5;
+    padding: 30px 30px 80px 30px;
+}
+
+.booking-form-section{
+    flex: 4;
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+.booking-head{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.booking-head > span{
+    font-weight: 800;
+}
+
+.booking-brand{
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.booking-shead-label{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.booking-shead-value{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.booking-viewall{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.booking-viewall:hover{
+    color: #80bfff;
+}
+
+.booking-form-head{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.booking-form-head > span{
+    font-weight: 800;
+}
+
+.booking-form-label{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.booking-form-input{
+    height: 40px;
+    width: 420px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-form-select{
+    margin-bottom: 40px;
+}
+
+.booking-form-terms-head{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.booking-form-terms-body{
+    font-size: 16px;
+    font-weight: 300;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.booking-form-link{
+    background-color: #790E22;
+    height: 48px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form-button{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
