@@ -1,0 +1,84 @@
+.booked-container{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.booked-body{
+    width: 85%;
+    padding: 50px 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booked-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.booked-booking{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.booked-successful{
+    font-weight: 700;
+}
+
+.booked-summary{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.booked-download{
+    color: #790E22;
+    text-decoration: underline;
+}
+
+.booked-bottom{
+    display: flex;
+    width: 100%;
+}
+
+.booked-ex-img{
+    flex: 2;
+    background-color: black;
+}
+
+.booked-ex-img > img{
+    width: 100%;
+}
+
+.booked-explore{
+    flex: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.booked-expore-text{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    left: 70px;
+}
+
+.booked-expore-border{
+    border: 2px solid rgba(200,200,200,0.4 );
+    height: 400px;
+    width: 350px;
+    align-self:flex-end;
+    margin-bottom: 20px;
+}
