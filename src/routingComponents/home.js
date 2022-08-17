@@ -103,7 +103,7 @@ const Home = () =>{
                         <Link to="/cars" className="viewall-button">View all</Link>
                     </div>
                 </div>
-                
+                 
                 <div className="featured-cars-body">
                     {loading && <p className="loading-class">loading....</p>}
                     {error && <p className="error-class">Error occured:- {error}</p>}

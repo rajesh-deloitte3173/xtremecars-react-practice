@@ -135,6 +135,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.specification-book > div:hover{
+    box-shadow: 0px 0px 10px 1px;
 }
 
 .but{
@@ -142,5 +147,5 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 800; 
 }
