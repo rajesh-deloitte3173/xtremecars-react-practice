@@ -82,7 +82,8 @@ const Home = () =>{
                 backgroundImage: `url(${backgroundImg})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '1400px 700px',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                transition: '1s'
             }}>
                 <div className="car-entery-box">
                     <input type="text" className="car-input-box" placeholder="Enter car name..."/>

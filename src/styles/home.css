@@ -20,6 +20,7 @@
 
     display: flex;
     align-items: flex-end;
+    transition: 0.5s;
 }
 
 .select-car-name:hover{
@@ -40,6 +41,7 @@
 
     display: flex;
     align-items: flex-end;
+    transition: 0.5s;
 }
 
 .selected-car{
